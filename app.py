@@ -9,7 +9,7 @@ engine = LagosTideEngine()
 st.title("🐬 Welcome To Lagos Harbour")
 st.title("⚓️ NN @ 70 Tide Predictor")
 st.subheader(
-    "Thank for being part of NN's 70th Anniversary celebrations. We wish you a happy stay in Lagos.")
+    "Thanks for being part of NN's 70th Anniversary celebrations. We wish you a happy stay in Lagos.")
 
 start = st.text_input("Start Date (YYYY-MM-DD HH:MM)")
 end = st.text_input("End Date (YYYY-MM-DD HH:MM)")
