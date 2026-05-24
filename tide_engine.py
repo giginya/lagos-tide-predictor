@@ -207,6 +207,12 @@ class LagosTideEngine:
 
     def generate_series(self, start, end, interval_minutes=30):
 
+        if interval_minutes <= 0:
+            raise ValueError("interval_minutes must be greater than zero")
+
+        if end <= start:
+            raise ValueError("end must be after start")
+
         times = pd.date_range(
             start=start,
             end=end,
